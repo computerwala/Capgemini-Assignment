@@ -2,25 +2,30 @@ git init
 touch index.html
 git status
 git add index.html
-git commit -m "add 1"
+git commit -m "commited 1"
 
 # after few changes
 touch info.txt
 git status
-mkdir .gitignore
+touch .gitignore
 inside .gitignore type *.txt
 git add index.html
-git commite -m "add 2"
+git commite -m "commited 2"
 git log
 
 #makes some changes in index.html
-git revert HEAD 1
+git checkout -- .
 
 #again making changes in index.html 
-git add index.html
-git revert HEAD 2
-git add index.html 
-git commit -m "my-add"
-git revert HEAD
+git rm --cached 'index.html'
+git status
+git config  --global alias.my-add add
+git my-add index.html
+git status
+git commit -m "commited 3"
 
+git log
+
+#revert back to last
+git reset --hard HEAD~1
 
