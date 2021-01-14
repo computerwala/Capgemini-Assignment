@@ -1,0 +1,42 @@
+git init
+git add
+
+#create a new branch 'html-assignments'
+git branch
+git branch html-assignments
+git checkout html-assignments
+
+#create some html files and copy and paste it in html-assignments
+
+#commit HTML assignments into 'html-assignments'
+
+git add -a
+git commit -m 'commite all html files in html-assignments'
+
+#make changes in html-assignments and commit that changes
+git add -a
+git commit -m "changes are commited in html-assignments"
+
+#switch to master branch
+
+git branch
+git checkout master
+
+#make changes in files
+git status
+and commit that changes and now switch to html-assignments
+git branch
+git checkout html-assignments
+
+#make some changes in html files and commit that
+#switch to master and merge 'html-assignments' branch to master. 
+git merge html-assignments
+git log
+
+#then delete the html-assignments
+git branch
+git branch -d html-assignments
+git branch
+#see the head is pointing to master
+
+
