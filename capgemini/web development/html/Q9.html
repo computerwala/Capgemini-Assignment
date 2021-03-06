@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .item1 { grid-area: topLeft; background: #c0c0c0; border: 1px groove #333333; width: 73px; height: 20px;}
+    .item2 { grid-area: topRight; background: #808080; border: 1px groove #333333; width: 73px; height: 20px;}
+    .item3 { grid-area: botLeft; background: #808080; border: 1px groove #333333; width: 73px; height: 40px;}
+    .item4 { grid-area: botRight; background: #c0c0c0; border: 1px groove #333333; width: 73px; height: 40px;}
+
+    .grid-container {
+       display: grid;
+       grid-template-areas:
+         'topLeft topLeft topLeft topRight topRight topRight'
+         'botLeft botLeft botLeft botRight botRight botRight';
+       border: 2px groove #333333;  
+       width: 150px;
+       height: 64px;
+    }
+</style>
+</head>
+<body>
+    <div class="grid-container">
+		<div class="item1">topLeft</div>
+
+		<div class="item2">topRight</div>
+
+		<div class="item3"><p>botLeft</p></div>
+
+    <div class="item4"><p>botRight</p></div>
+	</div>
+</body>
+</html>

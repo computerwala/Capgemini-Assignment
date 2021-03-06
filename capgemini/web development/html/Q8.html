@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+		.item1 { grid-area: top; background: #008080; border: 1px groove #333333; width: 98px; height: 20px;}
+        .item2 { grid-area: left; background: #808080; border: 1px groove #333333; width: 48px; height: 20px;}
+        .item3 { grid-area: right; background: #c0c0c0; border: 1px groove #333333; width: 48px; height: 20px;}
+
+        .grid-container {
+           display: grid;
+           grid-template-areas:
+             'top top top top top top'
+             'left left left right right right';
+           border: 2px groove #333333;  
+           width: 100px;
+           height: 44px;
+        }
+	</style>
+</head>
+<body>
+    <div class="grid-container">
+		<div class="item1">Top</div>
+
+		<div class="item2">Left</div>
+
+		<div class="item3">Right</div>
+	</div>
+</body>
+</html>
